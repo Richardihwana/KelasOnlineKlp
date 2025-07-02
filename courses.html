@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Kelas Online - Kursus Populer</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Dosis:wght@400;700&family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+
+<link rel="stylesheet" href="">
+<link rel="stylesheet" href="Style.css">
+<link rel="stylesheet" href="courses.css">
+<style>
+
+</style>
+</head>
+<body>
+  <header>
+    <a href="index.html" class="header__logo">
+      <img src="https://cdn-icons-png.flaticon.com/512/3075/3075977.png" alt="Logo Kelas Online" />
+      Kelas Online
+    </a>
+
+    <input type="checkbox" id="menu-toggle" aria-label="Toggle menu navigasi" />
+    <label for="menu-toggle" class="menu-toggle">
+      <i class="bi bi-list"></i>
+    </label>
+
+
+    <nav>
+      <ul>
+        <li><a href="index.html" >Beranda</a></li>
+        <li><a href="about.html">Tentang</a></li>
+        <li><a href="courses.html"class="active">Kursus</a></li>
+        <li><a href="kontak.html">Kontak</a></li>
+        <li><a href="login.html" class="btn">Login</a></li>
+      </ul>
+    </nav>
+  </header>
+<main>
+  <h1 class="section__title">Kursus Populer</h1>
+  <div class="courses-grid">
+
+    <article class="course-card" tabindex="0" aria-label="Kursus Pemrograman Python">
+      <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=600&q=80" alt="Pemrograman Python" class="course-image" />
+      <div class="course-content">
+        <h3 class="course-title">Pemrograman Python</h3>
+        <p class="course-description">Belajar dasar hingga mahir pemrograman Python untuk pengembangan aplikasi dan data science.</p>
+        <div class="course-footer">
+          <span><i class="bi bi-clock"></i> 20 Jam</span>
+          <span><i class="bi bi-people"></i> 1500+ Siswa</span>
+          <span class="course-price">Rp 350.000</span>
+        </div>
+        <button class="btn-buy" aria-label="Beli kelas Pemrograman Python" type="button" disabled>
+          <i class="bi bi-cart-plus"></i> Beli Kelas
+        </button>
+      </div>
+    </article>
+
+    <article class="course-card" tabindex="0" aria-label="Kursus Web Development">
+      <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=600&q=80" alt="Web Development" class="course-image" />
+      <div class="course-content">
+        <h3 class="course-title">Web Development</h3>
+        <p class="course-description">Belajar membuat website responsif menggunakan HTML, CSS, dan JavaScript.</p>
+        <div class="course-footer">
+          <span><i class="bi bi-clock"></i> 25 Jam</span>
+          <span><i class="bi bi-people"></i> 2000+ Siswa</span>
+          <span class="course-price">Rp 400.000</span>
+        </div>
+        <button class="btn-buy" aria-label="Beli kelas Web Development" type="button" disabled>
+          <i class="bi bi-cart-plus"></i> Beli Kelas
+        </button>
+      </div>
+    </article>
+
+    <article class="course-card" tabindex="0" aria-label="Kursus UI/UX Design">
+      <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=600&q=80" alt="UI/UX Design" class="course-image" />
+      <div class="course-content">
+        <h3 class="course-title">UI/UX Design</h3>
+        <p class="course-description">Mengenal prinsip desain antarmuka dan pengalaman pengguna untuk aplikasi modern.</p>
+        <div class="course-footer">
+          <span><i class="bi bi-clock"></i> 18 Jam</span>
+          <span><i class="bi bi-people"></i> 1200+ Siswa</span>
+          <span class="course-price">Rp 320.000</span>
+        </div>
+        <button class="btn-buy" aria-label="Beli kelas UI/UX Design" type="button" disabled>
+          <i class="bi bi-cart-plus"></i> Beli Kelas
+        </button>
+      </div>
+    </article>
+
+    <article class="course-card" tabindex="0" aria-label="Kursus Machine Learning">
+      <img src="https://images.unsplash.com/photo-1516321497487-e288fb19713f?auto=format&fit=crop&w=600&q=80" alt="Machine Learning" class="course-image" />
+      <div class="course-content">
+        <h3 class="course-title">Machine Learning</h3>
+        <p class="course-description">Pelajari algoritma pembelajaran mesin untuk aplikasi AI dan prediksi data.</p>
+        <div class="course-footer">
+          <span><i class="bi bi-clock"></i> 30 Jam</span>
+          <span><i class="bi bi-people"></i> 900+ Siswa</span>
+          <span class="course-price">Rp 500.000</span>
+        </div>
+        <button class="btn-buy" aria-label="Beli kelas Machine Learning" type="button" disabled>
+          <i class="bi bi-cart-plus"></i> Beli Kelas
+        </button>
+      </div>
+    </article>
+
+    <article class="course-card" data-aos="zoom-in-up" tabindex="0" aria-label="Kursus Cybersecurity">
+      <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=600&q=80" alt="Cybersecurity" class="course-image" />
+      <div class="course-content">
+        <h3 class="course-title">Cybersecurity</h3>
+        <p class="course-description">Dasar-dasar keamanan jaringan dan perlindungan data dari serangan digital.</p>
+        <div class="course-footer">
+          <span><i class="bi bi-clock"></i> 22 Jam</span>
+          <span><i class="bi bi-people"></i> 850+ Siswa</span>
+          <span class="course-price">Rp 450.000</span>
+        </div>
+        <button class="btn-buy" aria-label="Beli kelas Cybersecurity" type="button" disabled>
+          <i class="bi bi-cart-plus"></i> Beli Kelas
+        </button>
+      </div>
+    </article>
+
+    <article class="course-card" data-aos="zoom-in-up"tabindex="0" aria-label="Kursus Cloud Computing">
+      <img src="https://images.unsplash.com/photo-1504386106331-3e4e71712b38?auto=format&fit=crop&w=600&q=80" alt="Cloud Computing" class="course-image" />
+      <div class="course-content">
+        <h3 class="course-title">Cloud Computing</h3>
+        <p class="course-description">Memahami layanan cloud dan penerapannya dalam pengelolaan infrastruktur modern.</p>
+        <div class="course-footer">
+          <span><i class="bi bi-clock"></i> 28 Jam</span>
+          <span><i class="bi bi-people"></i> 1100+ Siswa</span>
+          <span class="course-price">Rp 480.000</span>
+        </div>
+        <button class="btn-buy" aria-label="Beli kelas Cloud Computing" type="button" disabled>
+          <i class="bi bi-cart-plus"></i> Beli Kelas
+        </button>
+      </div>
+    </article>
+
+  </div>
+  
+</main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-line"></div>
+    <p>&copy; 2025 Kelas Online. Semua hak dilindungi.</p>
+    <div class="footer-social">
+      <a href="#"><i class="bi bi-instagram"></i></a>
+      <a href="#"><i class="bi bi-twitter"></i></a>
+      <a href="#"><i class="bi bi-youtube"></i></a>
+    </div>
+  </footer>
+
+  <!-- AOS JS -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>AOS.init();</script>
+</body>
+</html>
