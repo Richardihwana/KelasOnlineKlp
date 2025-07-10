@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Kelas Online - Tentang Kami</title>
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
+  <link rel="stylesheet" href="Style.css" />
+  <link rel="stylesheet" href="about.css" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+</head>
+
+<body>
+  <div class="background"></div>
+  <div class="overlay"></div>
+
+  <!-- Header -->
+  <header>
+    <a href="index.html" class="header__logo">
+      <img src="https://cdn-icons-png.flaticon.com/512/3075/3075977.png" alt="Logo Kelas Online" />
+      Kelas Online
+    </a>
+
+    <input type="checkbox" id="menu-toggle" aria-label="Toggle menu navigasi" />
+    <label for="menu-toggle" class="menu-toggle">
+      <i class="bi bi-list"></i>
+    </label>
+
+    <nav>
+      <ul>
+        <li><a href="index.html">Beranda</a></li>
+        <li><a href="about.html" class="active">Tentang</a></li>
+        <li><a href="courses.html">Kursus</a></li>
+        <li><a href="kontak.html">Kontak</a></li>
+        <li><a href="login.html" class="btn">Login</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    <section class="main-section">
+      <h1 class="section__title" data-aos="fade-up">Tentang Kami</h1>
+      <div class="about-text" data-aos="fade-up" data-aos-delay="100">
+        <p><strong>Kelas Online</strong> adalah platform pendidikan digital yang dirancang untuk membantu semua orang belajar dengan lebih mudah, fleksibel, dan menyenangkan.</p>
+        <p>Kami menyediakan berbagai kursus profesional, didukung oleh instruktur ahli, teknologi terkini, dan komunitas belajar yang aktif.</p>
+      </div>
+
+      <div class="about-info" data-aos="fade-up" data-aos-delay="200">
+        <h2>Visi Kami</h2>
+        <p>Menjadi pelopor pendidikan digital yang inklusif dan terpercaya di Indonesia.</p>
+
+        <h2>Misi Kami</h2>
+        <ul>
+          <li>Menyediakan akses belajar yang fleksibel untuk semua kalangan.</li>
+          <li>Menjamin kualitas materi dengan mentor profesional.</li>
+          <li>Mendorong budaya belajar sepanjang hayat.</li>
+        </ul>
+      </div>
+
+      <div class="team" data-aos="fade-up" data-aos-delay="300">
+        <h2>Tim Kami</h2>
+        <div class="team-grid">
+          <div class="team-member">
+            <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Tim A" />
+            <h4>Rizal Haris</h4>
+            <p>CEO & Founder</p>
+          </div>
+          <div class="team-member">
+            <img src="https://randomuser.me/api/portraits/women/45.jpg" alt="Tim B" />
+            <h4>Dina Paramitha</h4>
+            <p>Head of Content</p>
+          </div>
+          <div class="team-member">
+            <img src="https://randomuser.me/api/portraits/men/55.jpg" alt="Tim C" />
+            <h4>Andi Surya</h4>
+            <p>Lead Developer</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-line"></div>
+    <p>&copy; 2025 Kelas Online. Semua hak dilindungi.</p>
+    <div class="footer-social">
+      <a href="#"><i class="bi bi-instagram"></i></a>
+      <a href="#"><i class="bi bi-twitter"></i></a>
+      <a href="#"><i class="bi bi-youtube"></i></a>
+    </div>
+  </footer>
+
+  <!-- AOS JS -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>AOS.init();</script>
+</body>
+</html>

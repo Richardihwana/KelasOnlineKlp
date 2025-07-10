@@ -1,0 +1,138 @@
+:root {
+  --primary-color: #00bcd4;
+  --accent-color: #ffc107;
+  --text-color: #fff;
+  --overlay-gradient: linear-gradient(135deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8));
+}
+
+
+
+.background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=compress&cs=tinysrgb&dpr=2&h=1200&w=1600');
+  background-size: cover;
+  background-position: center;
+  z-index: -2;
+  filter: brightness(0.7);
+}
+
+.overlay {
+  background: var(--overlay-gradient);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+
+
+.section__title {
+  text-align: center;
+  font-size: 2.5rem; /* Increased font size */
+  margin: 2rem 0; /* Margin for spacing */
+  color: var(--accent-color);
+}
+
+.about-text {
+  max-width: 800px; /* Limit width for better readability */
+  margin: 0 auto; /* Center align */
+  padding: 1rem; /* Padding for spacing */
+  background: rgba(255, 255, 255, 0.1); /* Slightly transparent background */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Soft shadow */
+  animation: fadeIn 1s ease forwards; /* Fade in effect */
+}
+
+.about-text p {
+  margin-bottom: 1.5rem; /* Spacing between paragraphs */
+  line-height: 1.8; /* Increased line height for readability */
+}
+
+footer {
+  text-align: center;
+  margin-top: 3rem;
+  color: #ccc;
+  font-size: 0.9rem;
+}
+
+/* Animation for fade in */
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+      transform: translateY(20px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .section__title {
+      font-size: 2rem; /* Smaller title on mobile */
+  }
+  .about-text {
+      padding: 1rem; /* Adjust padding on mobile */
+  }
+}
+.about-text, .about-info, .team {
+  background: rgba(255,255,255,0.05);
+  padding: 2rem;
+  margin: 2rem auto;
+  border-radius: 12px;
+  max-width: 900px;
+  color: #ddd;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+}
+
+.about-info ul {
+  margin-top: 1rem;
+  padding-left: 1.5rem;
+}
+
+.about-info li {
+  margin-bottom: 0.5rem;
+}
+
+.team-grid {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+}
+
+.team-member {
+  text-align: center;
+  max-width: 180px;
+}
+
+.team-member img {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  margin-bottom: 0.5rem;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+.footer-social {
+  margin-top: 1rem;
+}
+
+.footer-social a {
+  margin: 0 0.5rem;
+  color: var(--accent-color);
+  font-size: 1.2rem;
+  transition: color 0.3s ease;
+}
+
+.footer-social a:hover {
+  color: #fff;
+}
