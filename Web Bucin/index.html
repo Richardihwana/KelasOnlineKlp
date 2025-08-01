@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Happy Anniversary 💖</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="Style.css">
+</head>
+<body onload="showPopup(); playMusic(); startCountdown();">
+
+  <!-- Popup Ucapan -->
+  <div class="popup" id="popup">
+    <div class="popup-content">
+      <h2>💝 Kejutan Cinta Terindah</h2>
+      <p>Selamat Anniversary Sayangku 💗<br>3 Tahun Kebersamaan Penuh Makna</p>
+      <button onclick="closePopup()">Buka Surprise Cintaku ❤️</button>
+    </div>
+  </div>
+
+  <!-- Musik -->
+  <audio id="music" src="https://www.bensound.com/bensound-music/bensound-romantic.mp3" autoplay loop></audio>
+  <button id="muteBtn" onclick="toggleMusic()" aria-label="Toggle music">🔊</button>
+
+  <!-- Efek Hati Jatuh -->
+  <div id="hearts-container"></div>
+
+  <div class="container">
+
+    <!-- Judul -->
+    <header class="fade-in">
+      <h1>💖 Happy One Anniversary 💖</h1>
+      <p class="glow">4 Agustus 2025 – Tahun Pertama Bersama</p>
+    </header>
+
+    <!-- Countdown -->
+    <div class="countdown" id="countdown"></div>
+
+    <!-- Kartu Ucapan -->
+    <section class="card fade-in-up">
+      <div class="image-wrapper">
+        <video class="container" width="100%" height="auto" controls autoplay muted loop>
+          <source src="gmb/video1.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+      <div class="message">
+        <p>Di hari yang penuh makna ini, kita rayakan perjalanan cinta yang telah tumbuh kuat dan indah selama tiga tahun. 🌸</p>
+        <p>Terima kasih telah menjadi rumahku, pelukanku, dan alasan untuk tersenyum setiap hari. ❤️</p>
+        <p>Aku akan selalu mencintaimu—dalam tiap detik, hari, dan tahun yang kita jalani bersama. 💞</p>
+      </div>
+    </section>
+
+    <!-- Timeline Cinta -->
+    <div class="timeline">
+      <h2>📅 Timeline Cinta Kita</h2>
+      <div class="timeline-item left-timeline">
+        <div class="timeline-content">
+          <div class="timeline-date">6 Juli 2024</div>
+          <p>Hari pertama kita bertemu. Masih ingat bagaimana kamu tersenyum malu-malu? 😊</p>
+        </div>
+      </div>
+      <div class="timeline-item right-timeline">
+        <div class="timeline-content">
+          <div class="timeline-date">14 Februari 2024</div>
+          <p>Valentine pertama kita bersama. Kamu memberiku cokelat buatanmu yang sangat manis! 🍫</p>
+        </div>
+      </div>
+      <div class="timeline-item left-timeline">
+        <div class="timeline-content">
+          <div class="timeline-date">4 Agustus 2024</div>
+          <p>Hari jadi pertama kita! Akhirnya resmi menjadi pasangan. 💑</p>
+        </div>
+      </div>
+      <div class="timeline-item right-timeline">
+        <div class="timeline-content">
+          <div class="timeline-date">08 Juni 2024</div>
+          <p>Liburan pertama kita ke Candi. Matahari terbenam di Pantai Jimbaran takkan pernah kulupakan. 🌅</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Surat Cinta -->
+    <section class="love-letter">
+      <h3>Lalu Aku Tersadar...</h3>
+      <p>jika langit hanya untuk dipandang, bukan untuk dimilki. kau adalah bintang yang paling terang dilangit</p>
+      <p>sedangkan aku hanyalah serpihan komet yang telah hancur berkeping-keping karena tidak bisa menembus atmosfer</p>
+      <p>Selamat hari jadi sayang. Ini hanya awal dari petualangan seumur hidup kita bersama.</p>
+      <p style="text-align: right; margin-top: 20px;">Dengan semua cintaku,<br>Richard</p>
+    </section>
+
+    <!-- Scrapbook Kenangan -->
+    <section class="scrapbook-section">
+      <div class="scrapbook-header">
+        <h2>
+          <span class="icon-frame">📸</span>
+          <span class="title-gradient">Kenangan Kita</span>
+        </h2>
+        <p class="subtitle">Setiap momen bersamamu adalah halaman terindah dalam buku hidupku</p>
+      </div>
+
+      <div class="gallery-container">
+        <div class="polaroid-gallery">
+          <div class="polaroid">
+            <div class="photo-wrapper">
+              <img src="gmb/foto2.jpeg" alt="Momen Pertama" loading="lazy">
+              <div class="overlay">
+                <span class="heart-pulse">💖</span>
+              </div>
+            </div>
+            <div class="caption">
+              <h3>Awal Bertemu</h3>
+              <p>9 September 2024</p>
+              <div class="memory-quote">
+                <p>Ketika senyum pertamamu membuat jantungku berdetak lebih cepat...</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="polaroid">
+            <div class="photo-wrapper">
+              <img src="gmb/foto5.jpeg" alt="Kencan Pertama" loading="lazy">
+              <div class="overlay">
+                <span class="heart-pulse">🥰</span>
+              </div>
+            </div>
+            <div class="caption">
+              <h3>Valentine</h3>
+              <p>14 Februari 2023</p>
+              <div class="memory-quote">
+                <p>Valentine pertama yang mengubah hidupku selamanya...</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="polaroid">
+            <div class="photo-wrapper">
+              <img src="gmb/foto1.jpeg" alt="Hari Jadi" loading="lazy">
+              <div class="overlay">
+                <span class="heart-pulse">💍</span>
+              </div>
+            </div>
+            <div class="caption">
+              <h3>Kondangan Date</h3>
+              <p>14 Juni 2025</p>
+              <div class="memory-quote">
+                <p>Resmi menjadi pasangan, awal petualangan seumur hidup...</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="scrapbook-footer">
+        <p>Teruslah mengisi lembaran buku ini bersamaku, sayang...</p>
+      </div>
+    </section>
+
+    <!-- Bucket List -->
+    <section class="bucket-list"> 
+      <h2>✨ Wishlist Kita</h2>
+      <div class="bucket-item">
+        <input type="checkbox" class="bucket-checkbox" id="item1">
+        <label for="item1">Menonton matahari terbit di gunung bersama</label>
+      </div>
+      <div class="bucket-item">
+        <input type="checkbox" class="bucket-checkbox" id="item2">
+        <label for="item2">Belajar memasak makanan favorit bersama</label>
+      </div>
+      <div class="bucket-item">
+        <input type="checkbox" class="bucket-checkbox" id="item3">
+        <label for="item3">Pergi ke konser musik favorit</label>
+      </div>
+      <div class="bucket-item">
+        <input type="checkbox" class="bucket-checkbox" id="item4">
+        <label for="item4">Membuat album foto perjalanan cinta kita</label>
+      </div>
+      <div class="bucket-item">
+        <input type="checkbox" class="bucket-checkbox" id="item5">
+        <label for="item5">Tinggal sementara di kota/kampung halaman masing-masing</label>
+      </div>
+    </section>
+
+    <!-- Chat Cinta -->
+    <div class="chat-box">
+      <div class="bubble right">Aku cinta kamu. 💬</div>
+      <div class="bubble left">Aku juga cinta kamu, sayang! 💖</div>
+      <div class="bubble right">Kita selamanya ya? 💍</div>
+      <div class="bubble left">Iya! Selamanya dan lebih dari itu! 💕</div>
+    </div>
+
+    <!-- New Memory Game -->
+    <section class="game-section">
+      <h2>🎮 Memory Game Cinta</h2>
+      <p id="question">Temukan semua pasangan foto kenangan kita!</p>
+      <div class="memory-game" id="memoryGame">
+        <!-- Cards will be generated by JavaScript -->
+      </div>
+      <div id="gameStats" style="margin-top: 20px;">
+        <p>Pasangan ditemukan: <span id="pairsFound">0</span>/8</p>
+        <p>Percobaan: <span id="attempts">0</span></p>
+      </div>
+      <button onclick="resetGame()">Main Lagi</button>
+      <p id="response"></p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <p>Dibuat dengan sepenuh hati oleh Richard 💗<br>Untuk wanita terindah dalam hidupku</p>
+    </footer>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
